@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"> <img src="../Images/browneslogo.jpg" alt="Brownes Logo" width="75px" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/contact_us.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menus</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Menus/Browne's Food Menus.pdf">Á La Carte</a></li>
+              <li><a class="dropdown-item" href="../Menus/Browne's Kids Menu.pdf">Kids Menu</a></li>
+              <li><a class="dropdown-item" href="../Menus/Browne's Drinks Menu.pdf">Drinks Menu</a></li>
+              <li><a class="dropdown-item" href="../Menus/Browne's Dessert Menu.pdf">Dessert Menu</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Images/header-website.jpg" class="d-block w-100" alt="steak on a hot lava stone">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/header-website2.jpg" class="d-block w-100" alt="a dining table with menus">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/header-website3.jpg" class="d-block w-100" alt="a dinner table with glasses of wine a main course dish">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>  
+    <section>
+        <h2><strong>Contact Us</strong></h2>
+        <p>You are more than welcome to contact us by callling (01) 821 1551 or emailing us on brownesjuicysteaks@gmail.com</p>
+        <p>Our Address is The Plaza, Main Street, Blanchardstown Village, Dublin 15, D15 Y2ND</p>
+        <p><strong>Our Opening Hours are:</strong></p>
+        <p>Monday - Friday: 12pm - 11pm</p>
+        <p>Sunday: 12:30pm - 9:30pm</p>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.631420476828!2d-6.378927911233589!3d53.38564400037158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d572ee15cc3%3A0x759045dcc8c8f5fc!2sBrownes%20Steakhouse!5e0!3m2!1sen!2sie!4v1697120690498!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form onsubmit="return validateForm()">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="customer_name" placeholder="John Doe">
+
+          <label for="email">Your E-mail:</label>
+          <input type="email" id="email" name="customer_email" placeholder="john.doe@email.com">
+
+          <label for="phone">Your Phone Number:</label>
+          <input type="tel" id="phone" name="customer_phone" placeholder="0843483872">
+
+          <label for="adult">Adults:</label>
+          <input type="number" id="adult" name="total_adults" placeholder="0">
+
+          <label for="child">Children:</label>
+          <input type="number" id="child" name="total_children">
+
+          <label for="date-of-booking">Booking Date:</label>
+          <input type="date" id="date" name="booking_date">
+
+          <label for="booking-time">Booking Time:</label>
+          <input type="time" id="time" name="booking_time">
+
+          <label for="occasion-selection">Select Occasion:</label>
+          <select id="occasion-selection" name="occasion_selection">
+              <option value="">Choose an Occasion from the List:</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="datenight">Date Night</option>
+              <option value="other">Other</option>
+          </select>
+
+          <label for="message">Anything Else or Other Requests?</label>
+          <textarea id="message" name="customer_message" placeholder="Tell us anything else that might be important such as allergens or special requests."></textarea>
+
+        <button class="booking-btn" type="submit">Book Reservation</button>
+      </form>
+      <h3 id="DarkModetext">Dark Mode is OFF</h3>
+      <button id="dark-btn" onclick="darkMode()">DarkMode</button>
+      <button id="light-btn" onclick="lightMode()">LightMode</button>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/BrownesSteakhouse/"><img src="../Images/facebook.jpg" alt="image of facebook icon" width="50" height="50"></a>
+      <a href="https://www.instagram.com/brownessteakhouse/?hl=en"><img src="../Images/instagram.jpg" alt="image of instagram icon" width="50" height="50"></a>
+      <a href="https://twitter.com/brownesdublin"><img src="../Images/twitter.jpg" alt="image of twitter icon" width="50" height="50"></a>
+      <a href="https://www.tripadvisor.ie/Restaurant_Review-g1381349-d2236186-Reviews-Brownes_Steakhouse-Blanchardstown_County_Dublin.html"><img src="../Images/tripAd.jpg" alt="image of trip advisor icon" width="50" height="50"></a>
+  </div>
+    <p>©2023 Created by Amanda Ajredini</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src= "../Javascript/script.js"></script>
+</body>
+</html>
