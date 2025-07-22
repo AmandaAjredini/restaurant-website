@@ -5,7 +5,7 @@ body {
     color: #000000;
 }
 header{
-    background-image: url("Images/header-website.jpg");
+    background-image: url("../Images/header-website.jpg");
     background-size: cover;
     background-position: center;
     padding: 200px 0;
